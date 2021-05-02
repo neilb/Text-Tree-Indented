@@ -10,6 +10,10 @@ use utf8;
 
 our @EXPORT_OK = qw/ generate_tree /;
 
+my %arguments = (
+    style => "styling of tree, one of: classic, boxrule, norule",
+);
+
 my %styles = (
     boxrule => { vert => '│', horiz => '─', tee => '├', corner => '└' },
     classic => { vert => '|', horiz => '-', tee => '+', corner => '+' },
@@ -22,6 +26,10 @@ sub generate_tree
 
     $opt          //= {};
     $opt->{style} //= 'boxrule';
+
+    foreach my $arg (keys %$opt) {
+        croak "unknown argument '$arg'" if not exists $arguments{$arg};
+    }
 
     croak "unknown style '$opt->{style}'" if not exists($styles{ $opt->{style} });
 
