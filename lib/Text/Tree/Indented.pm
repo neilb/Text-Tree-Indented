@@ -145,7 +145,21 @@ this function takes an optional second argument,
 which should be a hashref.
 
 At the moment there is just one option, B<style>,
-which can be one of B<'boxrule'>, B<'classic'>, or B<'norule'>.
+which can be one of B<'boxrule'>, B<'classic'>, or B<'norule'>:
+
+ print generate_tree($data, { style => 'classic' });
+
+For the example shown in the SYNOPSIS, the resulting tree is:
+
+ ABC
+   +-DEF
+   |   +-GHI
+   |   +-JKL
+   +-MNO
+   |   +-PQR
+   |       +-STU
+   +-VWX
+
 The default is 'boxrule'.
 
 If you are using the boxrule style,
