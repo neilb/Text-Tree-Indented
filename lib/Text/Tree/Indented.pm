@@ -99,7 +99,7 @@ which takes a perl data structure and renders it into
 an indented tree view.
 
 B<Note>: the design of this module is still very much in flux,
-so the data structure and other aspects made change from release
+so the data structure and other aspects may change from release
 to release.
 
 The tree data is passed as an arrayref.
