@@ -146,6 +146,26 @@ If you are using the boxrule style,
 then you should make sure your output can handle wide characters,
 as in the SYNOPSIS.
 
+
+=head1 SEE ALSO
+
+There are many modules on CPAN for building tree data structures,
+such as L<Tree>, L<Tree::AVL>, L<Tree::Binary>, etc.
+
+L<Data::RenderAsTree>, L<Data::TreeDumper>, and L<Data::TreeDraw>
+will render a Perl data structure as an ASCII tree.
+
+L<Text::Tree> takes a representation of a tree and draws
+a top-down tree with ASCII boxes around the labels.
+
+L<Tree::To::TextLines> draws an indented tree,
+but requires the tree to be in a more complex,
+but richer, data structure.
+
+L<Tree::Visualize> can render trees in a number of ways,
+aimed at situations where you're already using something
+like L<Tree::Binary> to hold your tree data.
+
 =head1 REPOSITORY
 
 L<https://github.com/neilb/Text-Tree-Indented>

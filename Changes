@@ -1,8 +1,9 @@
 Revision history for Perl module Text::Tree::Indented
 
-0.02 2021-05-03 NEILB
-    - added more tests to get full coverage
-    - added check for unknown options
+0.02 2021-05-04 NEILB
+    - Added more tests to get full coverage
+    - Added check for unknown options
+    - Added a SEE ALSO section to the documentation
 
 0.01 2021-05-02 NEILB
     - First release to CPAN
