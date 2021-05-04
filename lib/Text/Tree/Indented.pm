@@ -77,7 +77,13 @@ Text::Tree::Indented - render a tree data structure in the classic indented view
 =head1 SYNOPSIS
 
     use Text::Tree::Indented qw/ generate_tree /;
-    my $data = ['ABC', ['DEF', ... ];
+
+    my $data = [ 'ABC', [
+                   'DEF', [ 'GHI', 'JKL' ],
+                   'MNO', [ 'PQR', ['STU' ]],
+                   'VWX'
+               ] ];
+
     binmode(STDOUT, "utf8");
     print generate_tree($data);
 
